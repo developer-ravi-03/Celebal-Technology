@@ -1,3 +1,5 @@
+-- Week 2 SQL Assignment
+
 -- Create Database and Use it  
 CREATE DATABASE celebal_week2;
 USE celebal_week2;
@@ -141,3 +143,85 @@ INNER JOIN order_items oi
     ON o.order_id = oi.order_id
 INNER JOIN products p
     ON oi.product_id = p.product_id;
+
+-- =====================
+-- SECTION E
+-- =====================
+
+-- Q24. Classify products into price tiers using CASE.
+SELECT
+    product_name,
+    unit_price,
+    CASE
+        WHEN unit_price < 1000 THEN 'Budget'
+        WHEN unit_price BETWEEN 1000 AND 3000 THEN 'Mid-Range'
+        WHEN unit_price > 3000 THEN 'Premium'
+    END AS price_tier
+FROM products;
+
+-- Q25. Count Delivered vs Not Delivered orders.
+SELECT
+    SUM(
+        CASE
+            WHEN status = 'Delivered' THEN 1
+            ELSE 0
+        END
+    ) AS delivered_orders,
+
+    SUM(
+        CASE
+            WHEN status <> 'Delivered' THEN 1
+            ELSE 0
+        END
+    ) AS not_delivered_orders
+
+FROM orders;
+
+-- Q27. SQL Transaction Example
+START TRANSACTION;
+
+-- Step 1: Insert a new order
+INSERT INTO orders
+VALUES (
+    2001,
+    102,
+    CURDATE(),
+    'Pending',
+    1598.00
+);
+
+-- Step 2: Insert first order item
+INSERT INTO order_items
+VALUES (
+    9001,
+    2001,
+    201,
+    1,
+    799.00,
+    0
+);
+
+-- Step 3: Insert second order item
+INSERT INTO order_items
+VALUES (
+    9002,
+    2001,
+    202,
+    1,
+    799.00,
+    0
+);
+
+-- Step 4: Update stock quantities
+UPDATE products
+SET stock_qty = stock_qty - 1
+WHERE product_id = 201;
+
+UPDATE products
+SET stock_qty = stock_qty - 1
+WHERE product_id = 202;
+
+COMMIT;
+
+-- If any step fails:
+-- ROLLBACK;

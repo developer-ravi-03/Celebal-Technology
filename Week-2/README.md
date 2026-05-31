@@ -194,3 +194,54 @@ The insertion will fail because `customer_id = 999` does not exist in the `custo
 The Foreign Key constraint enforces referential integrity by ensuring that every customer referenced in the `orders` table already exists in the `customers` table.
 
 MySQL will return a Foreign Key constraint violation error and reject the insertion.
+
+---
+
+## Section E
+
+### Q26. Explain each letter of ACID.
+
+#### A – Atomicity
+
+Atomicity means a transaction is treated as a single unit of work. Either all operations succeed or none of them are applied.
+
+Example:
+During a bank transfer, money is deducted from one account and added to another. If one step fails, the entire transaction is rolled back.
+
+---
+
+#### C – Consistency
+
+Consistency ensures that a transaction brings the database from one valid state to another valid state.
+
+Example:
+After a bank transfer, the total amount of money in the system remains unchanged.
+
+---
+
+#### I – Isolation
+
+Isolation ensures that multiple transactions running at the same time do not interfere with each other.
+
+Example:
+Two customers attempting to purchase the last item in stock should not create conflicting updates.
+
+---
+
+#### D – Durability
+
+Durability guarantees that once a transaction is committed, the changes are permanently stored even if the system crashes.
+
+Example:
+After a bank transfer is successfully completed and committed, the transaction remains saved even if the server immediately shuts down.
+
+---
+
+#### Real-World Example: Bank Transfer
+
+Suppose ₹5000 is transferred from Account A to Account B.
+
+1. Atomicity ensures both debit and credit operations succeed together.
+2. Consistency ensures the total money in the system remains correct.
+3. Isolation prevents other transactions from seeing intermediate states.
+4. Durability ensures the transfer remains recorded after commit, even if the database crashes.
