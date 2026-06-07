@@ -1,5 +1,5 @@
 /*
-Final query
+Final query:-
 
 Shows customer name,
 total sales and rank.

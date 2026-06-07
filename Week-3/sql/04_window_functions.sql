@@ -1,5 +1,5 @@
 /*
-Query 5
+Query 5:-
 
 Rank customers based on total sales.
 */
@@ -24,7 +24,7 @@ FROM customer_sales;
 
 
 /*
-Query 6
+Query 6:-
 
 Assign row numbers to each order
 for every customer.
@@ -45,10 +45,9 @@ FROM orders;
 
 
 /*
-Query 7
+Query 7:-
 
-Display top 3 customers
-based on total sales.
+Display top 3 customers based on total sales.
 */
 
 WITH customer_sales AS

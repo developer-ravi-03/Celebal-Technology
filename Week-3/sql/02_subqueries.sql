@@ -1,14 +1,8 @@
 /*
-====================================================
-Query 1
+Query 1:-
+
 Find orders having sales greater than average sales.
-
-Concept Used:
-Subquery
-
-Business Purpose:
-Identify high-value orders.
-====================================================
+Using Subquery.
 */
 
 SELECT *
@@ -20,16 +14,10 @@ WHERE Sales >
 );
 
 /*
-====================================================
-Query 2
+Query 2:-
+
 Find highest sales order for each customer.
-
-Concept Used:
-Correlated Subquery
-
-Business Purpose:
-Find customer's highest-value order.
-====================================================
+Using Subquery.
 */
 
 SELECT *

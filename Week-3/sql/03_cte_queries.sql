@@ -1,5 +1,5 @@
 /*
-Query 3
+Query 3:-
 
 Calculate total sales for each customer.
 Using CTE.
@@ -18,10 +18,9 @@ FROM customer_sales;
 
 
 /*
-Query 4
+Query 4:-
 
-Find customers whose total sales
-are above average.
+Find customers whose total sales are above average.
 Using CTE and subquery.
 */
 
