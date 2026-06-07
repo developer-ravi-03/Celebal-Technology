@@ -21,6 +21,14 @@ Celebal-Technology/
 │   ├── screenshots/
 │   └── README.md
 │
+├── Week-3/
+│   ├── dataset/
+│   ├── notebook/
+│   ├── screenshots/
+│   ├── sql/
+│   ├── load_data.py
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -30,7 +38,7 @@ Celebal-Technology/
 
 ## Objective
 
-Learn Python basics and perform basic data exploration and cleaning using Pandas.
+Learn Python basics and perform data exploration and cleaning using Pandas.
 
 ## Tasks Performed
 
@@ -41,6 +49,7 @@ Learn Python basics and perform basic data exploration and cleaning using Pandas
   - `shape`
   - `columns`
   - `info()`
+
 - Identified and handled missing values
 - Applied filtering and column selection operations
 - Removed duplicate records
@@ -65,22 +74,14 @@ Analyze sales data using SQL by applying filtering, aggregation, joins, indexes,
 
 ## Topics Covered
 
-### Section A – SQL Basics & Constraints
+### SQL Basics & Constraints
 
-- Table exploration
-- Data retrieval using SELECT
+- SELECT statements
 - Constraints
 - Primary Keys
 - Validation checks
 
-### Section B – Indexes & Optimization
-
-- Understanding indexes
-- Query performance improvement
-- SARGable queries
-- Index usage analysis
-
-### Section C – Aggregations
+### Aggregations
 
 - GROUP BY
 - COUNT
@@ -90,17 +91,16 @@ Analyze sales data using SQL by applying filtering, aggregation, joins, indexes,
 - MAX
 - HAVING clause
 
-### Section D – Joins & Relationships
+### Joins & Relationships
 
 - INNER JOIN
 - LEFT JOIN
 - Foreign Keys
 - Table Relationships
 
-### Section E – Advanced SQL Concepts
+### Advanced SQL Concepts
 
 - CASE Statements
-- ACID Properties
 - Transactions
 - COMMIT
 - ROLLBACK
@@ -109,9 +109,68 @@ Analyze sales data using SQL by applying filtering, aggregation, joins, indexes,
 
 - SQL Solution File
 - Query Result Screenshots
-- Documentation and Explanations
+- Documentation
 
 📁 Location: `Week-2/`
+
+---
+
+# Week 3 – Sales Analysis Using Subqueries, CTEs and Window Functions
+
+## Objective
+
+Analyze Superstore sales data using advanced SQL concepts such as Subqueries, Common Table Expressions (CTEs), Window Functions, Ranking Functions, and Joins.
+
+## Tasks Performed
+
+### Data Preparation
+
+- Imported Superstore dataset into MySQL
+- Created:
+  - customers table
+  - products table
+  - orders table
+
+### Subqueries
+
+- Orders with sales greater than average sales
+- Highest sales order for each customer
+
+### CTE (Common Table Expressions)
+
+- Total sales per customer
+- Customers with above-average sales
+
+### Window Functions
+
+- Customer ranking using `RANK()`
+- Order numbering using `ROW_NUMBER()`
+- Top 3 customers based on total sales
+
+### Final Analysis
+
+- Combined JOIN, CTE, and Window Functions
+- Generated customer sales ranking report
+
+### Mini Project – Customer Sales Insights
+
+Solved the following business questions:
+
+1. Top 5 customers based on sales
+2. Bottom 5 customers based on sales
+3. Customers who placed only one order
+4. Customers with above-average sales
+5. Highest order value for each customer
+
+## Deliverables
+
+- SQL Scripts
+- Query Result Screenshots
+- Jupyter Notebook
+- Dataset Import Script
+- Documentation
+
+📁 Location: `Week-3/`
 
 ---
 
@@ -124,6 +183,7 @@ Analyze sales data using SQL by applying filtering, aggregation, joins, indexes,
 - SQL
 - Git
 - GitHub
+- VS Code
 
 ---
 
@@ -135,10 +195,13 @@ Through these assignments, I gained practical experience in:
 - Data Exploration using Pandas
 - SQL Query Writing
 - Aggregations and Filtering
-- Database Constraints
-- Indexing and Query Optimization
+- Database Design
 - Joins and Relationships
-- Transaction Management
+- Subqueries
+- Common Table Expressions (CTEs)
+- Window Functions
+- Ranking and Analytical Queries
+- Query Optimization
 - Git and GitHub Workflow
 
 ---
