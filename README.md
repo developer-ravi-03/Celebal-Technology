@@ -1,6 +1,6 @@
 # Celebal Technology Internship
 
-This repository contains my work completed during the Celebal Technologies Data Engineering Internship. The repository is organized week-wise and includes assignments, datasets, SQL scripts, notebooks, outputs, screenshots, and documentation.
+This repository contains my work completed during the Celebal Technologies Data Engineering Internship. The repository is organized week-wise and includes assignments, datasets, SQL scripts, notebooks, cloud implementations, screenshots, outputs, and documentation.
 
 ---
 
@@ -27,6 +27,12 @@ Celebal-Technology/
 │   ├── screenshots/
 │   ├── sql/
 │   ├── load_data.py
+│   └── README.md
+│
+├── Week-4/
+│   ├── architecture/
+│   ├── data/
+│   ├── screenshots/
 │   └── README.md
 │
 └── README.md
@@ -174,6 +180,124 @@ Solved the following business questions:
 
 ---
 
+# Week 4 – Azure Cloud Fundamentals and Data Pipeline Implementation using Azure Data Factory
+
+## Objective
+
+Build an end-to-end data pipeline using Azure Blob Storage and Azure Data Factory (ADF) to ingest, validate, process, and copy data between storage containers.
+
+## Tasks Performed
+
+### Azure Resource Setup
+
+- Created Azure Resource Group
+- Created Azure Storage Account
+- Created Source and Destination Blob Containers
+- Uploaded SampleSuperstore CSV dataset
+
+### Azure Data Factory Setup
+
+- Created Azure Data Factory
+- Explored:
+  - Author
+  - Monitor
+  - Manage
+
+modules.
+
+### Linked Service Configuration
+
+- Connected Azure Data Factory with Azure Blob Storage
+- Validated connectivity using Test Connection
+
+### Dataset Creation
+
+- Created Source Dataset
+- Created Destination Dataset
+
+### Metadata Validation
+
+- Configured Get Metadata Activity
+- Retrieved source file metadata before execution
+
+### Pipeline Development
+
+Created an end-to-end pipeline using:
+
+- Get Metadata Activity
+- Copy Data Activity
+
+### Pipeline Execution
+
+- Validated pipeline configuration
+- Executed pipeline successfully
+- Monitored execution status
+
+### Output Verification
+
+- Generated output file in destination container
+- Verified successful data movement
+
+### IAM Configuration
+
+Assigned Azure IAM roles:
+
+- Reader
+- Contributor
+
+to manage and verify storage access permissions.
+
+## Pipeline Architecture
+
+```text
+SampleSuperstore.csv
+        │
+        ▼
+Azure Blob Storage
+(Source Container)
+        │
+        ▼
+Linked Service
+        │
+        ▼
+Source Dataset
+        │
+        ▼
+Get Metadata Activity
+        │
+        ▼
+Copy Data Activity
+        │
+        ▼
+Destination Dataset
+        │
+        ▼
+Azure Blob Storage
+(Destination Container)
+        │
+        ▼
+Output.csv
+```
+
+## Deliverables
+
+- Azure Resource Group
+- Storage Account
+- Blob Containers
+- Linked Service
+- Source Dataset
+- Destination Dataset
+- Metadata Validation Activity
+- Copy Data Pipeline
+- Pipeline Execution Results
+- Output Verification
+- IAM Role Assignments
+- Documentation and Screenshots
+
+📁 Location: `Week-4/`
+
+---
+
 # Technologies Used
 
 - Python
@@ -181,6 +305,11 @@ Solved the following business questions:
 - Jupyter Notebook
 - MySQL
 - SQL
+- Microsoft Azure
+- Azure Storage Account
+- Azure Blob Storage
+- Azure Data Factory (ADF)
+- Azure IAM
 - Git
 - GitHub
 - VS Code
@@ -190,6 +319,8 @@ Solved the following business questions:
 # Learning Outcomes
 
 Through these assignments, I gained practical experience in:
+
+### Data Analysis & SQL
 
 - Data Cleaning and Preprocessing
 - Data Exploration using Pandas
@@ -202,7 +333,24 @@ Through these assignments, I gained practical experience in:
 - Window Functions
 - Ranking and Analytical Queries
 - Query Optimization
+
+### Cloud & Data Engineering
+
+- Azure Cloud Fundamentals
+- Azure Storage Account Management
+- Azure Blob Storage
+- Azure Data Factory
+- Linked Services and Datasets
+- Metadata Validation
+- Data Pipeline Orchestration
+- IAM and Access Control
+- End-to-End Cloud Data Integration
+
+### Tools & Workflow
+
 - Git and GitHub Workflow
+- Project Documentation
+- Data Engineering Best Practices
 
 ---
 
@@ -212,7 +360,7 @@ Through these assignments, I gained practical experience in:
 
 Bachelor of Technology (Computer Science & Engineering)
 
-Data Engineering Internship – Celebal Technologies
+Data Engineering Intern – Celebal Technologies
 
 GitHub: https://github.com/developer-ravi-03
 
