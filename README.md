@@ -34,6 +34,11 @@ Celebal-Technology/
 │   ├── data/
 │   ├── screenshots/
 │   └── README.md
+├── Week-5/
+│   ├── data/
+│   ├── notebook/
+│   ├── output/
+│   └── README.md
 │
 └── README.md
 ```
@@ -298,6 +303,111 @@ Output.csv
 
 ---
 
+# Week 5 – Data Cleaning and Data Transformation using Apache Spark
+
+## Objective
+
+Learn Apache Spark fundamentals and perform data cleaning, transformation, filtering, aggregation, schema modification, and data processing operations using Spark DataFrames.
+
+## Tasks Performed
+
+### Spark Fundamentals
+
+- Studied limitations of traditional MapReduce
+- Understood Spark architecture and advantages
+- Explored Spark In-Memory Computing
+- Learned Spark DataFrame concepts and immutability
+
+### Data Cleaning
+
+- Removed duplicate records
+- Handled null and missing values
+- Cleaned invalid records
+- Applied data quality checks
+
+### Filtering Operations
+
+- Filtered records using multiple conditions
+- Applied age-based and subscription-based filtering
+- Filtered records using region-specific criteria
+
+### Aggregations and GroupBy
+
+- Count aggregation
+- Sum aggregation
+- Average aggregation
+- Minimum and Maximum calculations
+- GroupBy operations with conditions
+
+### Schema Modifications
+
+- Renamed columns
+- Casted columns to appropriate datatypes
+- Converted timestamp columns using TimestampType
+
+### Spark Transformations
+
+- Understood narrow and wide transformations
+- Studied Spark Shuffle operations
+- Learned how distributed processing works in Spark
+
+### End-to-End Data Processing Pipeline
+
+Implemented a complete Spark pipeline that:
+
+1. Removed duplicate records
+2. Filled null values
+3. Applied transformations
+4. Performed aggregations
+5. Generated final business insights
+
+## Pipeline Architecture
+
+```text
+sales_data.csv
+      │
+      ▼
+Spark Session
+      │
+      ▼
+Load DataFrame
+      │
+      ▼
+Remove Duplicates
+      │
+      ▼
+Handle Null Values
+      │
+      ▼
+Apply Filters
+      │
+      ▼
+Schema Transformations
+      │
+      ▼
+GroupBy Operations
+      │
+      ▼
+Aggregations
+      │
+      ▼
+Final Processed Dataset
+```
+
+## Deliverables
+
+- PySpark Notebook
+- Sample Dataset
+- Data Cleaning Operations
+- Aggregation Queries
+- Transformation Examples
+- Output Screenshots
+- Documentation
+
+📁 Location: `Week-5/`
+
+---
+
 # Technologies Used
 
 - Python
@@ -313,6 +423,8 @@ Output.csv
 - Git
 - GitHub
 - VS Code
+- Apache Spark
+- PySpark
 
 ---
 
@@ -345,6 +457,16 @@ Through these assignments, I gained practical experience in:
 - Data Pipeline Orchestration
 - IAM and Access Control
 - End-to-End Cloud Data Integration
+- Apache Spark Fundamentals
+- Spark DataFrames
+- In-Memory Data Processing
+- Data Cleaning using Spark
+- Spark Transformations
+- GroupBy and Aggregations
+- Schema Management
+- Spark Shuffle Operations
+- Distributed Data Processing
+- End-to-End Spark Pipelines
 
 ### Tools & Workflow
 
