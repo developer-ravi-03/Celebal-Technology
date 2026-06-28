@@ -27,7 +27,7 @@ The implementation demonstrates how Spark processes large datasets efficiently u
 
 ## Technologies Used
 
-- Python 3.x
+- Python 3.10.11
 - PySpark
 - Apache Spark
 - Jupyter Notebook
