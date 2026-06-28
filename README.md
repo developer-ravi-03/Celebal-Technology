@@ -34,10 +34,19 @@ Celebal-Technology/
 │   ├── data/
 │   ├── screenshots/
 │   └── README.md
+│
 ├── Week-5/
 │   ├── data/
 │   ├── notebook/
 │   ├── output/
+│   └── README.md
+│
+├── Week-6/
+│   ├── data/
+│   ├── notebook/
+│   ├── output/
+│   ├── screenshots/
+│   ├── assignment.py
 │   └── README.md
 │
 └── README.md
@@ -408,6 +417,108 @@ Final Processed Dataset
 
 ---
 
+# Week 6 – Apache Spark Fundamentals and Data Processing using PySpark
+
+## Objective
+
+Understand Apache Spark architecture and perform distributed data processing using PySpark by working with DataFrames, schema handling, transformations, actions, filtering, CSV and Parquet file formats, and Spark performance optimization techniques.
+
+## Tasks Performed
+
+### Spark Architecture
+
+- Studied Driver, Cluster Manager, and Executor roles
+- Understood Spark execution model
+- Learned Client Mode and Cluster Mode
+- Explored Lineage Graph (DAG)
+
+### Spark Performance
+
+- Studied Lazy Evaluation
+- Learned Predicate Pushdown
+- Compared CSV and Parquet file formats
+- Understood Spark optimization techniques
+
+### DataFrame Operations
+
+- Created Spark Session
+- Loaded CSV files with schema inference
+- Selected required columns
+- Renamed DataFrame columns
+- Casted column data types
+- Added calculated columns
+
+### Filtering Operations
+
+- Filtered records using multiple conditions
+- Applied logical **AND (`&`)** operations
+- Applied logical **OR (`|`)** operations
+
+### File Processing
+
+- Read CSV files
+- Saved DataFrames as Parquet files
+- Loaded Parquet files
+- Filtered null records
+- Exported processed data as CSV
+
+### Spark Concepts
+
+- Difference between Transformations and Actions
+- Safe dataset exploration using `show()` instead of `collect()`
+- Efficient DataFrame processing using Spark APIs
+
+## Spark Data Processing Workflow
+
+```text
+source.csv
+     │
+     ▼
+Spark Session
+     │
+     ▼
+Read CSV
+     │
+     ▼
+Infer Schema
+     │
+     ▼
+DataFrame Operations
+     │
+     ├── Select Columns
+     ├── Rename Columns
+     ├── Cast Data Types
+     ├── Filter Records
+     └── Add New Columns
+     │
+     ▼
+Write Parquet
+     │
+     ▼
+Read Parquet
+     │
+     ▼
+Filter Null Values
+     │
+     ▼
+Export as CSV
+```
+
+## Deliverables
+
+- PySpark Notebook
+- Sample Dataset
+- PySpark Assignment Script
+- CSV Processing
+- Parquet Processing
+- Output Files
+- Screenshots
+- Documentation
+
+📁 Location: `Week-6/`
+
+---
+
 # Technologies Used
 
 - Python
@@ -425,6 +536,8 @@ Final Processed Dataset
 - VS Code
 - Apache Spark
 - PySpark
+- Google Colab
+- Apache Parquet
 
 ---
 
@@ -467,6 +580,18 @@ Through these assignments, I gained practical experience in:
 - Spark Shuffle Operations
 - Distributed Data Processing
 - End-to-End Spark Pipelines
+- Spark Architecture
+- Driver, Cluster Manager and Executors
+- Lazy Evaluation
+- Directed Acyclic Graph (DAG)
+- CSV vs Parquet File Processing
+- Predicate Pushdown
+- Spark Actions and Transformations
+- DataFrame Operations
+- Schema Inference
+- Column Renaming and Type Casting
+- CSV and Parquet Read/Write Operations
+- Spark Performance Optimization
 
 ### Tools & Workflow
 
