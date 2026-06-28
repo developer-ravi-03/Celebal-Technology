@@ -1,0 +1,8 @@
+product_id,new_name,category,price,base_price,status,amount,user_id,region,priority,final_price
+101,Laptop,Electronics,75000.0,75000,Completed,75000,1001,North,High,88500.0
+102,Mouse,Electronics,800.0,800,Pending,800,1002,South,Low,944.0
+103,Keyboard,Electronics,1500.0,1500,Completed,1500,1003,North,Medium,1770.0
+105,Monitor,Electronics,18000.0,18000,Cancelled,18000,1005,East,Medium,21240.0
+106,Table,Furniture,5500.0,5500,Completed,5500,1006,North,Low,6490.0
+107,Printer,Electronics,12000.0,12000,Completed,12000,1007,South,High,14160.0
+108,Mobile,Electronics,25000.0,25000,Pending,25000,1008,North,High,29500.0
